@@ -1,7 +1,3 @@
-# DEPRECATED - This repo will be removed and archived soon, see https://groups.google.com/forum/#!topic/loopbackjs/w038RvqHeYI
-
----
-
 #loopback-testing
 
 **Utilities for testing LoopBack apps**
@@ -69,6 +65,27 @@ describe('/products', function() {
     it('should respond with an array of products', function() {
       assert(Array.isArray(this.res.body));
     });
+  });
+});
+```
+
+```js
+describe('/admin', function() {
+  lt.beforeEach.withApp(app);
+
+  // All tests below this will execute with the same user on the same role.
+  // Use individual 'whenCalledByUserWithRole' describes if you want to
+  // create and tear down the user each test.
+  lt.describe.whenLoggedInAsUserWithRole(someUserData, 'admin', function() {
+
+    lt.describe.whenCalledRemotely('POST', '/makeAnnouncement', function() {
+      lt.it.shouldBeAllowed();
+    });
+
+    lt.describe.whenCalledRemotely('POST', '/analytics', function() {
+      lt.it.shouldBeAllowed();
+    });
+
   });
 });
 ```
