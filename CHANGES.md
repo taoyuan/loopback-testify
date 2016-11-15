@@ -1,3 +1,8 @@
+2016-11-15, Version 2.0.0
+=========================
+
+ * Support promise for buildTo (taoyuan) 
+
 2015-06-24, Version 1.2.0
 =========================
 
