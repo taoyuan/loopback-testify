@@ -1,6 +1,6 @@
 {
-  "name": "loopback-testing",
-  "version": "51.2.2",
+  "name": "loopback-testify",
+  "version": "2.0.0",
   "description": "Utilities for testing LoopBack applications",
   "main": "index.js",
   "scripts": {
@@ -8,9 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/strongloop/loopback-testing"
+    "url": "https://github.com/taoyuan/loopback-testify"
   },
-  "author": "Ritchie Martori",
+  "author": "Tao Yuan <towyuan@outlook.com>",
+  "contributors": [
+    {
+      "name": "Ritchie Martori"
+    },
+    {
+      "name": "Samuel Reed"
+    }
+  ],
   "dependencies": {
     "bluebird": "^3.4.6",
     "chai": "^3.5.0",

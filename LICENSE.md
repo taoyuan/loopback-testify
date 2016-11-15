@@ -1,6 +1,6 @@
 Copyright (c) 2013-2015 StrongLoop, Inc.
 
-loopback-testing uses a dual license model.
+loopback-testify uses a dual license model.
 
 You may use this library under the terms of the [MIT License][],
 or under the terms of the [StrongLoop Subscription Agreement][].
