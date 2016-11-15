@@ -12,7 +12,7 @@
   },
   "author": "Ritchie Martori",
   "dependencies": {
-    "async": "^2.0.1",
+    "bluebird": "^3.4.6",
     "chai": "^3.5.0",
     "supertest": "^2.0.0"
   },
